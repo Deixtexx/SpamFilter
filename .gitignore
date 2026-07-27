@@ -3,14 +3,9 @@ venv/
 env/
 ENV/
 
-**/generated/
-**/Generated/
-
 data/
 *.csv
 *.pkl
-*.joblib
-!models/logistic_model.joblib
 
 __pycache__/
 *.pyc
