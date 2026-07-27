@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+service SpamFilter {
+  rpc Predict (PredictRequest) returns (PredictReply);
+}
+
+// Запрос: текст, который нужно проверить
+message PredictRequest {
+  string text = 1;
+}
+
+// Ответ: результат проверки и уверенность модели
+message PredictReply {
+  bool is_spam = 1;
+  float confidence = 2;
+}
