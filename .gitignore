@@ -1,14 +1,44 @@
-# данные (большие файлы)
-*.csv
-*.pkl
-*.joblib
+.venv/
+venv/
+env/
+ENV/
 
 **/generated/
 **/Generated/
 
-.venv/
-env/
+data/
+*.csv
+*.pkl
+*.joblib
+!models/logistic_model.joblib
 
-.vs/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.user
+*.suo
 
 *.log
+*.tmp
+*.bak
+
+.env
+secrets.json
+*.key
+*.pem
+
+bin/
+obj/
+out/
+build/
+
+.dockerignore
